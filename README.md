@@ -2,6 +2,8 @@
 
 Public site for Temple of Roots — GitHub Pages from this repo (`templeofroots.com`).
 
+**Custom domain setup:** see [PAGES-DNS.md](PAGES-DNS.md) (apex `templeofroots.com`, not `www` in `CNAME`).
+
 ## Layout
 
 - `*.html` — pages at site root
