@@ -388,6 +388,21 @@ main {
   padding: 0.75rem;
 }
 
+.embed-iframe-wrap {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  padding: 1rem;
+}
+
+.embed-iframe-wrap iframe {
+  width: 100%;
+  max-width: 480px;
+  height: 320px;
+  border: 1px solid #eee;
+  background: #fff;
+}
+
 .embed-fallback {
   margin-top: 0.75rem;
 }
