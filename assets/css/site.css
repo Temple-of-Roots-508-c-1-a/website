@@ -16,8 +16,8 @@
   --root-bright: #5d8f6a;
   --max: 72rem;
   --radius: 10px;
-  --header-pad: 1rem;
-  --logo-width: min(41.25rem, 92vw);
+  --header-pad: 0.75rem;
+  --logo-max-width: clamp(10rem, 28vw, 18rem);
   --font-serif: "Cormorant Garamond", "Palatino Linotype", Georgia, serif;
   --font-sans: "Source Sans 3", system-ui, sans-serif;
 }
@@ -33,7 +33,7 @@
 html {
   color-scheme: light;
   scroll-behavior: smooth;
-  scroll-padding-top: 12rem;
+  scroll-padding-top: 8rem;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -110,27 +110,29 @@ img {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
-  padding: var(--header-pad) 0 calc(var(--header-pad) + 0.5rem);
+  gap: 0.75rem 1rem;
+  padding: var(--header-pad) 0;
+  overflow: visible;
 }
 
 .brand {
   display: block;
-  flex-shrink: 0;
+  flex: 0 1 auto;
+  max-width: 100%;
   line-height: 0;
   text-decoration: none;
   overflow: visible;
-  padding-bottom: 0.25rem;
 }
 
 .brand:hover {
   opacity: 0.92;
 }
 
-.brand img {
-  width: var(--logo-width);
+.brand img,
+.site-logo {
+  width: auto;
   height: auto;
-  max-height: none;
+  max-width: var(--logo-max-width);
   display: block;
   object-fit: contain;
   object-position: left center;
@@ -450,7 +452,7 @@ main {
 
 @media (max-width: 900px) {
   :root {
-    --logo-width: min(22rem, 92vw);
+    --logo-max-width: clamp(9rem, 55vw, 14rem);
   }
 
   .site-header .wrap {
@@ -462,13 +464,20 @@ main {
     text-align: center;
   }
 
-  .brand img {
+  .brand img,
+  .site-logo {
     margin-inline: auto;
-    object-position: center;
+    object-position: center center;
   }
 
   .site-nav ul {
     justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --logo-max-width: min(85vw, 12rem);
   }
 }
 
