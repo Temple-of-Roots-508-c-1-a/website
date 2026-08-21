@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Protocol consultation — Temple of Roots</title>
+  <meta name="description" content="Request Zero Waste or permaculture protocol consultation from Temple of Roots." />
+  <link rel="icon" href="../assets/img/logo.png?v=6" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/site.css" />
+</head>
+<body data-asset-prefix="../">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../index.html">
+        <img src="../assets/img/logo.png?v=6" alt="Temple of Roots — Nature Based Ministry" class="site-logo" />
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../offerings.html">Offerings</a></li>
+          <li><a href="../initiations.html">Initiations</a></li>
+          <li><a href="../events.html">Events</a></li>
+          <li><a href="../sanctuaries.html">Sanctuaries</a></li>
+          <li><a href="../store.html">Store</a></li>
+          <li><a href="../membership.html">Membership</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../docs.html">Docs</a></li>
+          <li><a href="../governance.html">Governance</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <h1>Protocol consultation</h1>
+        <p class="lead">Zero Waste implementation for businesses or permaculture design for land stewards.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap prose-block">
+        <div class="protocol-grid protocol-grid-compact">
+          <article class="protocol-card">
+            <h3>Zero Waste Protocol (B2B)</h3>
+            <p>Tokenized waste diversion, IoT collection optimization, and commercial sustainability audits through Zero Waste Advocacy (ZWA).</p>
+          </article>
+          <article class="protocol-card">
+            <h3>Permaculture Design Rituals</h3>
+            <p>Rainwater harvesting, soil building, vermiculture, and rare fruit cultivation — design fees may be fulfilled via sacred contribution.</p>
+          </article>
+        </div>
+
+        <article class="action-card lead-capture-card" id="protocol-lead">
+          <h3>Tell us about your project</h3>
+          <p>Share a few details and we will follow up about next steps for your property or organization.</p>
+
+          <form class="lead-form" id="protocol-inquiry-form" novalidate>
+            <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+            <div class="form-row form-row-split">
+              <div class="form-field">
+                <label for="inquiry-name">Full name</label>
+                <input id="inquiry-name" name="name" type="text" required autocomplete="name" />
+              </div>
+              <div class="form-field">
+                <label for="inquiry-email">Email</label>
+                <input id="inquiry-email" name="email" type="email" required autocomplete="email" />
+              </div>
+            </div>
+
+            <div class="form-row form-row-split">
+              <div class="form-field">
+                <label for="inquiry-phone">Phone <span class="form-optional">(optional)</span></label>
+                <input id="inquiry-phone" name="phone" type="tel" autocomplete="tel" />
+              </div>
+              <div class="form-field">
+                <label for="inquiry-organization">Organization / property</label>
+                <input id="inquiry-organization" name="organization" type="text" autocomplete="organization" />
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="inquiry-protocol">Protocol</label>
+              <select id="inquiry-protocol" name="protocol" required>
+                <option value="">Select a protocol…</option>
+                <option value="zero-waste">Zero Waste Protocol (B2B)</option>
+                <option value="permaculture">Free land survey — Permaculture Design</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="inquiry-message">Project details</label>
+              <textarea id="inquiry-message" name="message" rows="5" required placeholder="Site location, square footage, waste streams, land size, goals, timeline…"></textarea>
+            </div>
+
+            <label class="form-consent">
+              <input type="checkbox" name="consent" value="yes" required />
+              <span>I consent to receive communications from Temple of Roots about this request, including email and phone, as described in the <a href="../disclaimer.html">disclaimer</a>.</span>
+            </label>
+
+            <div class="cta-row form-actions">
+              <button type="submit" class="btn btn-primary">Submit request</button>
+            </div>
+
+            <p class="form-status" role="status" aria-live="polite" hidden></p>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-web3">
+      <strong>Temple of Roots</strong>
+      <span class="ens">templeofroots.eth</span>
+      <a href="https://templeofroots.com">templeofroots.com</a>
+      <nav class="footer-web3-links" aria-label="Footer">
+        <a href="../membership.html">Membership</a><span>|</span>
+        <a href="../governance.html">Governance</a><span>|</span>
+        <a href="../sanctuaries.html">Sanctuaries</a><span>|</span>
+        <a href="../store.html">Store</a><span>|</span>
+        <a href="../disclaimer.html">Disclaimer</a>
+      </nav>
+      <p style="margin-top:1rem;opacity:0.7">&copy; Temple of Roots.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/forms-config.js"></script>
+  <script src="../assets/js/forms.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

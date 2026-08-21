@@ -380,6 +380,218 @@ main {
   margin-bottom: 1rem;
 }
 
+.protocol-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  margin: 1.5rem 0;
+}
+
+.protocol-grid-compact {
+  margin-bottom: 1.5rem;
+}
+
+.protocol-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.35rem;
+}
+
+.protocol-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  margin: 0 0 0.65rem;
+  color: var(--brown-dark);
+}
+
+.protocol-card p,
+.protocol-card ul {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.protocol-card ul {
+  margin-top: 0.65rem;
+  padding-left: 1.15rem;
+}
+
+.protocol-card .btn {
+  margin-top: 1rem;
+}
+
+.lead-capture-card {
+  margin-top: 1.5rem;
+}
+
+.lead-form {
+  margin-top: 1rem;
+}
+
+.form-row {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-row-split {
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+}
+
+.form-field label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.35rem;
+  color: var(--brown-dark);
+}
+
+.form-optional {
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font: inherit;
+  color: var(--text);
+  background: #fff;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  outline: 2px solid var(--brown-mid);
+  outline-offset: 1px;
+  border-color: var(--brown-mid);
+}
+
+.form-field textarea {
+  resize: vertical;
+  min-height: 6rem;
+}
+
+.form-consent {
+  display: flex;
+  gap: 0.65rem;
+  align-items: flex-start;
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin: 0.5rem 0 1rem;
+  cursor: pointer;
+}
+
+.form-consent input {
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+.form-actions {
+  margin-top: 0;
+}
+
+.form-actions .btn {
+  margin-top: 0;
+}
+
+.form-status {
+  margin-top: 1rem;
+  font-size: 0.92rem;
+}
+
+.form-status-error {
+  color: #8b2e2e;
+}
+
+.form-status-success {
+  color: var(--root);
+}
+
+.form-honey {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.embed-google-form {
+  margin: 1rem 0;
+  padding: 0;
+  overflow: auto;
+  max-height: min(85vh, 2400px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #fff;
+}
+
+.embed-google-form iframe {
+  width: 100%;
+  max-width: 640px;
+  border: 0;
+  display: block;
+  margin-inline: auto;
+}
+
+.embed-google-doc {
+  margin: 1rem 0;
+  padding: 0;
+  overflow: auto;
+  max-height: min(85vh, 1200px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #fff;
+}
+
+.embed-google-doc iframe {
+  width: 100%;
+  min-height: 640px;
+  height: min(80vh, 1200px);
+  border: 0;
+  display: block;
+}
+
+.embed-behance {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #fff;
+}
+
+.embed-behance iframe {
+  width: 100%;
+  max-width: 404px;
+  height: 316px;
+  border: 0;
+  display: block;
+}
+
+.permaculture-portfolio + .land-survey-form {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.protocol-card .btn + .btn {
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 480px) {
+  .protocol-card .btn + .btn {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+}
+
 .embed-wrap {
   margin: 1.25rem 0;
   max-width: 100%;
