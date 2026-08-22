@@ -128,45 +128,6 @@ img {
   opacity: 0.92;
 }
 
-.brand-rocket {
-  width: auto;
-  height: 3.75rem;
-  display: block;
-  overflow: visible;
-}
-
-.rocket-flames .flame {
-  transform-box: fill-box;
-  transform-origin: center bottom;
-  animation: rocket-flicker 0.42s ease-in-out infinite alternate;
-}
-
-.rocket-flames .flame-mid {
-  animation-delay: 0.12s;
-}
-
-.rocket-flames .flame-inner {
-  animation-delay: 0.24s;
-}
-
-@keyframes rocket-flicker {
-  0% {
-    transform: scaleY(0.82) scaleX(0.92);
-    opacity: 0.78;
-  }
-
-  100% {
-    transform: scaleY(1.18) scaleX(1.08);
-    opacity: 1;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .rocket-flames .flame {
-    animation: none;
-  }
-}
-
 .brand img,
 .site-logo {
   width: auto;
@@ -772,10 +733,6 @@ main {
 
   .brand {
     text-align: center;
-  }
-
-  .brand-rocket {
-    margin-inline: auto;
   }
 
   .brand img,
